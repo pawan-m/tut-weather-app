@@ -1,12 +1,12 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
-const gc = require('.\\utils\\geocode.js')
-const cw = require('.\\utils\\getcurrentweather.js')
+const gc = require('./utils/geocode.js')
+const cw = require('./utils/getcurrentweather.js')
 
-const publicPath = path.join(__dirname, '..\\public');
-const viewPath = path.join(__dirname, '..\\template\\views');
-const partialPath = path.join(__dirname,  '..\\template\\partials')
+const publicPath = path.join(__dirname, '../public');
+const viewPath = path.join(__dirname, '../template/views');
+const partialPath = path.join(__dirname,  '../template/partials')
 
 const port = process.env.PORT || 3000
 
