@@ -1,8 +1,8 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
-const gc = require('utils/geocode')
-const cw = require('utils/getcurrentweather')
+const gc = require('./src/utils/geocode')
+const cw = require('./src/utils/getcurrentweather')
 
 const publicPath = path.join(__dirname, '../public');
 const viewPath = path.join(__dirname, '../template/views');
