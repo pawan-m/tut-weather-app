@@ -8,6 +8,7 @@ const publicPath = path.join(__dirname, '..\\public');
 const viewPath = path.join(__dirname, '..\\template\\views');
 const partialPath = path.join(__dirname,  '..\\template\\partials')
 
+const prot = process.env.PORT || 3000
 
 const app = express()
 
@@ -64,6 +65,6 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(3000, () => {
-    console.log("Starting server on port 3000....")
+app.listen(port, () => {
+    console.log("Starting server on port " + port + "....")
 })
