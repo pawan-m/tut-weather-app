@@ -8,7 +8,7 @@ const publicPath = path.join(__dirname, '..\\public');
 const viewPath = path.join(__dirname, '..\\template\\views');
 const partialPath = path.join(__dirname,  '..\\template\\partials')
 
-const prot = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 const app = express()
 
